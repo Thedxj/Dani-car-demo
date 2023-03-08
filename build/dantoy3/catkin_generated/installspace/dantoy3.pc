@@ -1,0 +1,8 @@
+prefix=/home/karthik/Dani_ws/install
+
+Name: dantoy3
+Description: Description of dantoy3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

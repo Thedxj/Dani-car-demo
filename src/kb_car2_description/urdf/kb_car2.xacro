@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<robot name="kb_car2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find kb_car2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find kb_car2_description)/urdf/kb_car2.trans" />
+<xacro:include filename="$(find kb_car2_description)/urdf/kb_car2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.03523362631813541 0.0006651541796579881 0.16118452473956904" rpy="0 0 0"/>
+    <mass value="42.24177770791098"/>
+    <inertia ixx="0.407922" iyy="1.31886" izz="1.326072" ixy="-0.001781" iyz="-0.002058" ixz="-0.128518"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_front_1">
+  <inertial>
+    <origin xyz="-5.928590951498336e-14 0.012499999999999997 -1.1102230246251565e-16" rpy="0 0 0"/>
+    <mass value="0.25153848804359596"/>
+    <inertia ixx="0.000249" iyy="0.000472" izz="0.000249" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1625 -0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/left_wheel_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1625 -0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/left_wheel_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_front_1">
+  <inertial>
+    <origin xyz="-5.928590951498336e-14 -0.012500000000000011 -1.1102230246251565e-16" rpy="0 0 0"/>
+    <mass value="0.25153848804359596"/>
+    <inertia ixx="0.000249" iyy="0.000472" izz="0.000249" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1625 0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/right_wheel_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1625 0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/right_wheel_front_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_back_1">
+  <inertial>
+    <origin xyz="-5.931366509059899e-14 0.012499999999999997 0.0" rpy="0 0 0"/>
+    <mass value="0.25153848804359596"/>
+    <inertia ixx="0.000249" iyy="0.000472" izz="0.000249" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2 -0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/left_wheel_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2 -0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/left_wheel_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_back_1">
+  <inertial>
+    <origin xyz="-5.931366509059899e-14 -0.012500000000000011 0.0" rpy="0 0 0"/>
+    <mass value="0.25153848804359596"/>
+    <inertia ixx="0.000249" iyy="0.000472" izz="0.000249" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2 0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/right_wheel_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2 0.11 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/right_wheel_back_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="-3.469446951953614e-18 0.0 0.009531330817790062" rpy="0 0 0"/>
+    <mass value="0.1711211417853653"/>
+    <inertia ixx="2e-05" iyy="2e-05" izz="3.1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02 -0.0 -0.3125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02 -0.0 -0.3125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="-0.004999999999999949 0.0 0.0325" rpy="0 0 0"/>
+    <mass value="0.0628"/>
+    <inertia ixx="1e-05" iyy="3e-06" izz="9e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3 -0.0 -0.1175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3 -0.0 -0.1175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kb_car2_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="-0.1625 0.11 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_front_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.1625 -0.11 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_front_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="0.2 0.11 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_back_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.2 -0.11 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_back_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.02 0.0 0.3125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="-0.3 0.0 0.1175" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+</robot>
