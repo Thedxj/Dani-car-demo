@@ -12,12 +12,12 @@ teleop_twist_keyboard package
 
 1. Clone this repository to your local machine:
 ```bash:
-git clone https://github.com/your-username/four-wheeled-mobile-robot.git
+git clone https://github.com/Thedxj/Dani-car-demo.git
 ```
 
 2. Navigate to the four-wheeled-mobile-robot directory:
 ```bash
-cd four-wheeled-mobile-robot
+cd Dani-car-demo
 ```
 
 3. Build the package using catkin_make:
