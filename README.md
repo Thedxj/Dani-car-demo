@@ -41,6 +41,35 @@ This will launch Gazebo with the mobile robot in an H model environment.
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 This will launch the keyboard teleoperation node that allows you to control the movement of the robot.
+## Contributing
 
-### Contributing
-If you would like to contribute to this project, please fork the repository and submit pull requests. We welcome any contributions that can improve the simulation and its functionalities.
+We welcome contributions from the community to improve this project! Here's how you can get involved:
+
+**1. Fork the Repository:**
+
+Head over to [https://github.com/Thedxj/Dani-car-demo.git](https://github.com/Thedxj/Dani-car-demo.git) and fork the repository. This creates your own copy of the code that you can modify.
+
+**2. Make Changes:**
+
+Clone your forked repository to your local machine, make your desired changes, and commit them locally. 
+
+**3. Create a Pull Request:**
+
+Push your changes to your forked repository and create a pull request to the main branch of the original repository. This sends a notification to the project maintainers about your proposed contribution.
+
+**4. We Review and Discuss:**
+
+Project maintainers will review your pull request and provide feedback. This could involve suggesting improvements, clarifying points, or simply merging your changes if they're a good fit.
+
+**What We Appreciate:**
+
+We're open to contributions that can enhance the simulation in various ways:
+
+- Adding additional features to the environment (e.g., obstacles, sensors)
+- Improving teleoperation functionality (e.g., smoother control, additional control options)
+- Enhancing documentation (e.g., clearer instructions, tutorials)
+- Fixing bugs or technical issues
+
+**Feel free to reach out!**
+
+If you have any questions or need guidance during the contribution process, don't hesitate to open an issue or contact the project maintainers. We appreciate your interest in contributing!
