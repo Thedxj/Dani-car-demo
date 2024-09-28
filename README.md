@@ -43,4 +43,4 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 This will launch the keyboard teleoperation node that allows you to control the movement of the robot.
 
 ### Contributing
-If you would like to contribute to this project, please fork the repository and submit pull requests. We welcome any contributions that can improve the simulation and its functionalities.
+If you would like to contribute to this project, please fork the repository and submit pull requests. We welcome any contributions that can improve the simulation and its functionalities..
